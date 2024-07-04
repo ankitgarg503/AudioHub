@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav" style="background-color: #121212;">
+                <div class="nav-option"style="background-color: #121212;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#" style="opacity: 1;">Home</a>
+                </div>
+                <div class="nav-option"style="background-color: #121212;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library" style="background-color: #121212;">
+                <div class="option" style="background-color: #121212;">
+                    <div class="library-option nav-option" style="background-color: #121212;">
+                        <img src="icons/library_icon.png" alt="lib">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes"style="background-color: #121212;">
+                    <div class="box">
+                        <p class="box-p1" style="background-color: #232323;">Create your first playlist.</p>
+                        <p class="box-p2" style="background-color: #232323;">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1" style="background-color: #232323;">Lets's find some podcast to follow</p>
+                        <p class="box-p2" style="background-color: #232323;">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav" style="background-color: #121212;">
+                <div class="sticky-nav-icons" style="background-color: #121212;">
+                    <img src="icons/backward_icon.png">
+                    <img src="icons/forward_icon.png" class="hide" >
+                </div>
+                <div class="sticky-nav-options" style="background-color: #121212;">
+                    <button class="badge nav-item hide" style="height: 2rem; width:142px; font-size:0.75rem;transform:scale(1)">Explore Premium</button>
+                    <button class="badge nav-item dark-badge" style="background-color: #000; color:white"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-bell nav-item"></i>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+            <h2 style="background-color: #121212;">Trending now near you</h2>
+            <div class="cards-container" style="background-color: #121212;">
+                <div class="card">
+                    <img src="cards/trending.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Hot Hits Tamil</p>
+                    <p class="card-info" style="background-color: #232323;">Tune into the Hottest tracks of Kollywood! Cover : Leo</p>
+                </div>
+                <div class="card">
+                    <img src="cards/trending2.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">This Is BTS</p>
+                    <p class="card-info" style="background-color: #232323;">Ten years of BTS and beyond.<br>[BTS Monuments: Beyond The Story...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/trending3.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">BTS: Yet to Come..</p>
+                    <p class="card-info" style="background-color: #232323;">Enjoy the concert LIVE SET including the...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/trending4.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">This is Jubin Nautiyal</p>
+                    <p class="card-info" style="background-color: #232323;">This is Jubin Nautiyal. The Indian playback..</p>
+                </div>
+            </div>
+            <h2 style="background-color: #121212; margin-top:2rem;">Recently played</h2>
+            <div class="cards-container" style="background-color: #121212;">
+                <div class="card">
+                    <img src="cards/playlist2.jpg" style="border-radius: 50%;" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">V</p>
+                    <p class="card-info" style="background-color: #232323;">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="cards/playlist.jpg" style="border-radius: 50%;" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Jung Kook</p>
+                    <p class="card-info" style="background-color: #232323;">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="cards/playlist4.jpg" style="border-radius: 50%; height:150px; width:150px" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">BTS</p>
+                    <p class="card-info" style="background-color: #232323;">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="cards/playlist3.png" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Liked Songs</p>
+                    <p class="card-info" style="background-color: #232323;">271 Songs</p>
+                </div>
+                <div class="card">
+                    <img src="cards/playlist7.jpg" style="border-radius: 50%; height:160px; width:140px;" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Shreya Ghoshal</p>
+                    <p class="card-info" style="background-color: #232323;">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="cards/playlist5.jpg" style="border-radius: 50%;" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Jimin</p>
+                    <p class="card-info" style="background-color: #232323;">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="cards/playlist6.jpg" style="border-radius: 50%;" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Jin</p>
+                    <p class="card-info" style="background-color: #232323;">Artist</p>
+                </div>
+            </div>
+            <h2 style="background-color: #121212; margin-top:2rem;">More of what you like</h2>
+            <div class="cards-container" style="background-color: #121212;">
+                <div class="card">
+                    <img src="cards/music3.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Daily Mix 1</p>
+                    <p class="card-info" style="background-color: #232323;">Pritam, Arijit Singh, Ajay-Atul and <a href="#" style="background-color: #232323" class="underline">more</a></p>
+                </div>
+                <div class="card">
+                    <img src="cards/music2.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Daily Mix 2</p>
+                    <p class="card-info" style="background-color: #232323;">Jung Kook, The Kid LAROI, RM and...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/music.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Daily Mix 3</p>
+                    <p class="card-info" style="background-color: #232323;">BTS, Charlie Puth, TOMORROW X...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/music4.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Daily Mix 4</p>
+                    <p class="card-info" style="background-color: #232323;">Akhil, Neeti Mohan, Guru Randhawa and...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/music5.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Mega Hit Mix</p>
+                    <p class="card-info" style="background-color: #232323;">Justin Bieber, Alan Walker, Olivia Rodrigo...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/music6.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Bollywood Mix</p>
+                    <p class="card-info" style="background-color: #232323;">Neha Kakkar, Sunidhi Chauhan, Sonu Nigam...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/music7.jpg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">All Out 00's Hindi</p>
+                    <p class="card-info" style="background-color: #232323;">Lata Mangeshkar, Kishore Kumar, Kumar Sanu and <a href="#" style="background-color: #232323" class="underline">more</a></p>
+                </div>
+            </div>
+            <h2 style="background-color: #121212; margin-top:2rem;">Featured Charts</h2>
+            <div class="cards-container" style="background-color: #121212;">
+                <div class="card">
+                    <img src="cards/card6img.jpeg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Top Songs India</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played Indian culture and tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/card5img.jpeg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Top Songs Global</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played tracks gloablly...</p>
+                </div>
+                <div class="card">
+                    <img src="cards/card1img.jpeg" class="card-img">
+                    <p class="card-title" style="background-color: #232323;">Top 50 - Global</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played tracks...</p>
+                </div>
+            </div>
+            <div class="footer" style="background-color: #121212;">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="album_pic.jpg" class="album_pic">
+                <div class="album-info">
+                    <a href="#">Love Me Again</a>
+                    <img src="icons/album_icon1.png" class="album_icon" style="margin-left: 1rem;">
+                    <p class="V">V</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="icons/player_icon1.png" class="player-controls-icon">
+                    <img src="icons/player_icon2.png" class="player-controls-icon">
+                    <img src="icons/player_icon3.png" class="player-controls-icon" style="opacity: 1; height:2rem">
+                    <img src="icons/player_icon4.png" class="player-controls-icon">
+                    <img src="icons/player_icon5.png" class="player-controls-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">0:00</span>
+                    <input type="range" min="0" max="100" step="0.1" class="progress-bar">
+                    <span class="total-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="icons/controls_icon1.png" class="controls-icons">
+                <img src="icons/controld_icon2.png" class="controls-icons">
+                <img src="icons/controls_icon3.png" style="height: 1rem; margin-bottom:10px;" class="controls-icons">
+                <img src="icons/controls_icon4.png" style="height: 1rem; margin-bottom:10px;" class="controls-icons">
+                <img src="icons/controls_icon5.png" class="controls-icons">
+                <input type="range" name="" class="control-slider controls-icons" style="background-color:green">
+                <img src="icons/album_icon2.png" class="controls-icons">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
